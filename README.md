@@ -143,22 +143,22 @@ Class design
   + Can only call other operations for composability / reusability
   + Can / should have 100% unit test coverage
   + Encouraged to use functional style
-ViewModel
++ ViewModel
   + Dumb struct with data that matches the hierarchy of the view / API response
   + Other patterns that fit well into Command-Oriented Development
-Query Objects
++ Query Objects
   + For reusable SQL
   + boolean params that control sorting
   + int params for paging etc.
-Presenter / Decorators
++ Presenter / Decorators
   + But only for reusing or encapsulating view logic, not business logic
-Policies
++ Policies
   + Raise exception if a user isn't authorized to access service / command
-Builders
-Factories
-Facades
++ Builders
++ Factories
++ Facades
   + As external API for collection of services (or commands?)
-Domain objects?
++ Domain objects?
   + Certainly less useful in command-oriented programming
   + Keep separate from command-oriented objects
   + Separate folder in app
