@@ -137,33 +137,35 @@ Class design
   + Low level caching
   + Returns viewmodel
 + Operations
-Pure business logic
-Pure classes / functions
-No side effects ever
-Can only call other operations for composability / reusability
-Can / should have 100% unit test coverage
-Encouraged to use functional style
+  + Pure business logic
+  + Pure classes / functions
+  + No side effects ever (no queries)
+  + Can only call other operations for composability / reusability
+  + Can / should have 100% unit test coverage
+  + Encouraged to use functional style
 ViewModel
-Dumb struct with data that matches the hierarchy of the view / API response
-Other patterns that fit well into Command-Oriented Development
+  + Dumb struct with data that matches the hierarchy of the view / API response
+  + Other patterns that fit well into Command-Oriented Development
 Query Objects
-For reusable SQL
-boolean params that control sorting
-int params for paging etc.
+  + For reusable SQL
+  + boolean params that control sorting
+  + int params for paging etc.
 Presenter / Decorators
-But only for reusing or encapsulating view logic, not business logic
+  + But only for reusing or encapsulating view logic, not business logic
 Policies
-Raise exception if a user isn't authorized to access service / command
+  + Raise exception if a user isn't authorized to access service / command
 Builders
 Factories
+Facades
+  + As external API for collection of services (or commands?)
 Domain objects?
-Certainly less useful in command-oriented programming
-Keep separate from command-oriented objects
-Separate folder in app
-Treat as isolated set of classes
-For simulating real world
-Called from commands or services
-Most applications wouldn't need any at all
+  + Certainly less useful in command-oriented programming
+  + Keep separate from command-oriented objects
+  + Separate folder in app
+  + Treat as isolated set of classes
+  + For simulating real world
+  + Called from commands or services
+  + Most applications wouldn't need any at all
 
 "The wrong set of small objects is the worst case scenario. Really big objects are bad, but not that bad" - @sarahmei
 
