@@ -164,3 +164,7 @@ Treat as isolated set of classes
 For simulating real world
 Called from commands or services
 Most applications wouldn't need any at all
+
+"The wrong set of small objects is the worst case scenario. Really big objects are bad, but not that bad" - @sarahmei
+
+It's not about what a class represents, it's about the action it performs
